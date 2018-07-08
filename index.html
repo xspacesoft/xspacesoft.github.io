@@ -9,6 +9,9 @@
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="main.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Noto+Sans:700" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/brands.css" integrity="sha384-7xAnn7Zm3QC1jFjVc1A6v/toepoG3JXboQYzbM0jrPzou9OFXm/fY6Z/XiIebl/k" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/fontawesome.css" integrity="sha384-ozJwkrqb90Oa3ZNb+yKFW2lToAWYdTiF1vt8JiH5ptTGHTGcN7qdoR1F95e0kYyG" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/solid.css" integrity="sha384-TbilV5Lbhlwdyc4RuIV/JhD8NR+BfMrvz4BL5QFa2we1hQu6wvREr3v6XSRfCTRp" crossorigin="anonymous">
 </head>
 <style>
     body {
@@ -17,6 +20,27 @@
     .center {
         text-align: center;
         margin-top: 2em;
+    }
+    h1 {
+        font-size: 4em;
+        font-family: 'Noto Sans', sans-serif;
+        color: white
+    }
+    @media only screen and (max-width: 380px) {
+        h1 {
+            font-size: 3em;
+        }
+        .center {
+            margin-top: 1em;
+        }
+    }
+    @media only screen and (max-height: 480px) {
+        h1 {
+            font-size: 3em;
+        }
+        .center {
+            margin-top: 1em;
+        }
     }
     @media only screen and (min-height: 560px) {
         .center {
@@ -33,12 +57,19 @@
             margin-top: 13em;
         }
     }
+
 </style>
 <body>
     <div class="center">
         <img style="margin-bottom: 2em" src="logo_white.svg" height="200"/>
-        <h1 style="font-size: 4em; font-family: 'Noto Sans', sans-serif; color: white"; ">XSpaceSoft</h1>
-        <a href="mailto:info@xspacesoft.com"><button type="button" style="margin-top: 3em" class="btn btn-light btn-lg">Contact us</button></a>
+        <h1 style=""; ">XSpaceSoft</h1>
+        <br/>
+        <h3 style="color: white";">Contact us:</h3>
+        <div class="btn-group btn-group-lg" role="group" aria-label="Contact buttons">
+            <a href="mailto:info@xspacesoft.com" type="button" class="btn btn-light"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://facebook.com/XSpaceSoft" type="button" class="btn btn-light"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="https://github.com/xspacesoft" type="button" class="btn btn-light"><i class="fab fa-github"></i> GitHub</a>
+        </div>
     </div>
     
 </body>
